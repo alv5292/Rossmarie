@@ -6,7 +6,7 @@ module.exports = {
   solidity: "0.8.20",
   networks: {
     alfajores: {
-      url: process.env.ALFAJORES_RPC, // Example: https://alfajores-forno.celo-testnet.org
+      url: process.env.ALFAJORES_RPC,
       accounts: [process.env.PRIVATE_KEY.startsWith("0x") ? process.env.PRIVATE_KEY : `0x${process.env.PRIVATE_KEY}`],
       chainId: 44787,
     },
